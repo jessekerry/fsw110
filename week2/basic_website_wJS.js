@@ -1,17 +1,20 @@
-var h1 = document.createElementNS("h1")
+var h1 = document.createElement("h1")
 document.body.append(h1)
 h1.textContent = "I love coding"
 
-var p = document.createElementNS("P")
+var p = document.createElement("P")
 document.body.append(p)
 p.textContent = "Unicorns are amazing"
-var ol = document.createElementNS("ol")
+
+var ol = document.createElement("ol")
 document.body.append(ol)
 
 var li = document.createElement("li")
 li.textContent ="first list item"
-var li3 = document.createElement("li")
+
+var li2 = document.createElement("li")
 li2.textContent = "second list item"
+
 var li3 = document.createElement("li")
 li3.textContent="third list item"
 ol.append(li, li2, li3)
